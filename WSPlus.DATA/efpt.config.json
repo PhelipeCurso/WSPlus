@@ -1,0 +1,85 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "WSPlusContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "WSPlus.DATA",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Atendente]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Cliente]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Comanda]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Empresa]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Estoque]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Fornecedor]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Marca]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Mesa]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Produto]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Secao]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Setor_do_Estoque]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Usuario]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "PAT-000160\\SQLEXPRESS.WSPlus",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
