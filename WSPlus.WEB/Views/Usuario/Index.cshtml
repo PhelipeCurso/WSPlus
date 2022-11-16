@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WSPlus.DATA.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Usuários";
+}
+
+<h1>Usuários</h1>
+
+<p>
+    <a class="btn btn-outline-success " asp-action="Create">Novo Usuário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            
+            <td>
+                    <a asp-action="Edit" class="btn btn-outline-success " asp-route-id="@item.Id">Alterar</a> 
+                    <a asp-action="Details" class="btn btn-outline-primary " asp-route-id="@item.Id">Detalhes</a> 
+                    <a asp-action="Delete" class="btn btn-outline-danger " asp-route-id="@item.Id">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

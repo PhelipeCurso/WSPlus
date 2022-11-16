@@ -36,6 +36,7 @@ namespace WSPlus.DATA.Models
         public int IdEmpresa { get; set; }
         [Column("Id_Atendente")]
         public int? IdAtendente { get; set; }
+        public int Perfil { get; set; }
 
         [ForeignKey("IdAtendente")]
         [InverseProperty("Usuario")]
