@@ -25,4 +25,8 @@
     <ProjectReference Include="..\WSPlus.DATA\WSPlus.DATA.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Login\" />
+  </ItemGroup>
+
 </Project>

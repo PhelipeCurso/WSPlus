@@ -40,6 +40,20 @@ namespace WSPlus.WEB.Controllers
             Usuario oUsuario = oUsuarioService.oRepositoryUsuario.SelecionarPk(id);
             return View(oUsuario);
         }
+        [HttpPost]
+        public IActionResult Edit(Usuario model)
+        {
+            Usuario oUsuario = oUsuarioService.oRepositoryUsuario.Alterar(model);
+
+            int id = oUsuario.Id;
+
+            return RedirectToAction("Details", new { id });
+        }
+        public IActionResult Delete(int id)
+        {
+            oUsuarioService.oRepositoryUsuario.Excluir(id);
+            return RedirectToAction("index");
+        }
 
     }
 }

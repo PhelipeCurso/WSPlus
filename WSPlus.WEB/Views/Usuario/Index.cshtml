@@ -27,8 +27,31 @@
             
             <td>
                     <a asp-action="Edit" class="btn btn-outline-success " asp-route-id="@item.Id">Alterar</a> 
-                    <a asp-action="Details" class="btn btn-outline-primary " asp-route-id="@item.Id">Detalhes</a> 
-                    <a asp-action="Delete" class="btn btn-outline-danger " asp-route-id="@item.Id">Excluir</a>
+                    <a asp-action="Details" class="btn btn-outline-primary " asp-route-id="@item.Id">Detalhes</a>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger m-1" data-bs-toggle="modal" data-bs-target="#DeleteModal-@item.Id">
+                        <i = class="fa fa-trash"> Deletar </i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="DeleteModal-@item.Id" tabindex="-1" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="DeleteModalLabel">Excluir Cliente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Deseja realmente excluir o cliente @item.Nome?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary m-1" data-bs-dismiss="modal">Não</button>
+                                    <a asp-action="Delete" class="btn btn-outline-danger m-1" asp-route-id="@item.Id">Sim</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
             </td>
         </tr>
 }

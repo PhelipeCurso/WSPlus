@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WSPlus.DATA.Repositories;
+
+namespace WSPlus.DATA.Services
+{
+    public class AtendenteService
+    {
+        public RepositoryAtendente oRepositoryAtendente { get; set; }
+        public AtendenteService()
+        {
+            oRepositoryAtendente= new RepositoryAtendente();
+        }
+    }
+}
