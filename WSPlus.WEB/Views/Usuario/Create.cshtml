@@ -1,4 +1,5 @@
-﻿@model WSPlus.DATA.Models.Usuario
+﻿
+@model WSPlus.DATA.Models.Usuario
 
 @{
     ViewData["Title"] = "Create";
@@ -46,9 +47,13 @@
                 <span asp-validation-for="IdAtendente" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Perfil" class="control-label"></label>
-                <input asp-for="Perfil" class="form-control" />
-                <span asp-validation-for="Perfil" class="text-danger"></span>
+                <label for="nome" class="control-label">Perfil</label>                
+                <select asp-for="IdPerfil" class="form-control">
+                <option value="0">Selecione</option>
+                <option value="Admin">Administrador</option>
+                <option value="Padrao">Padrão</option>
+                <option value="Limitado">Limitado</option>
+                </select>
             </div>
             <div class="form-group">
                <input type="submit" value="Salvar" class="btn btn-outline-success m-1" />
